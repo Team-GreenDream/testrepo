@@ -1,0 +1,109 @@
+
+
+body
+{
+  background: #1abc9c;
+  color: #FFF;
+  font-size: 150%;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.container
+{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#coordinates
+{
+ margin: 50px 0px 50px 0px;
+}
+
+#restaurant-list
+{
+  margin: 50px 0px 50px 0px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+}
+/* Floats button in the middle */
+section{
+	margin: 50px 0;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The button */
+#button-blue{
+	float:left;
+	width: 100%;
+	max-width:500px;
+	border: white solid 4px;
+	cursor: pointer;
+	background-color: #1abc9c;
+	margin-top: -4px;
+	color: white;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	letter-spacing: .1em;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	font-weight: 500;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Change text color & background opacity on hover*/
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+/* The white hover effect */
+.ease {
+	width: 0px;
+	height: 70px;
+	background-color: white;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+/* Make visable when hover */
+.btn-container:hover .ease{
+	width: 100%;
+	max-width: 500px;
+	background-color: white;
+	border: 0;
+}
+
+
+h3 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 5em
+}
+h3:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: #fff;
+    animation: loading 8s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
