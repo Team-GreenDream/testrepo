@@ -1,14 +1,11 @@
 //this is a js file
 var runThis = ()=>{
-  for(var i = 0 ; i < 10000000; i++){
-    console.log("breaking");
-  }
-}
-/* DO WE NEED THIS FEATURE? */
-for (var i = 1; i > 0; i ++) {
-	console.log("Ethan Broke the App!")
-}
+  for(var i = 0 ; i < 1000; i++){
+    $('body').append(`<button class = "alert">${i}</button>`);
 
+  }
+  addEvent();
+}
 
 // check for Geolocation support
 if (navigator.geolocation) {
@@ -27,3 +24,18 @@ else {
 })
     });
   }
+
+
+var addEvent = function(){
+  $('.alert').on('click',function(ev){
+    ev.preventDefault();
+    alert($(this).text());
+
+  })
+}
+
+
+$('.click').on('click',function(event){
+  event.preventDefault();
+  runThis();
+})
