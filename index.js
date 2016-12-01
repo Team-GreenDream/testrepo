@@ -4,3 +4,7 @@ var runThis = ()=>{
     console.log("breaking");
   }
 }
+
+for (var i = 1; i > 0; i ++) {
+	console.log("Ethan Broke the App!")
+}
