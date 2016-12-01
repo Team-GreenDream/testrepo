@@ -11,6 +11,7 @@ for (var i = 1; i > 0; i ++) {
 	console.log("Ethan Broke the App!")
 }
 
+
 var addEvent = function(){
   $('.alert').on('click',function(ev){
     ev.preventDefault();
