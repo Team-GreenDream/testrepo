@@ -14,6 +14,7 @@ if (navigator.geolocation) {
 else {
   console.log('Geolocation is not supported for this Browser/OS.');
 }
+
 // Get the user's location:
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -24,6 +25,7 @@ else {
 })
     });
   }
+
 
 
 var addEvent = function(){
